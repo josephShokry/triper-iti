@@ -1,0 +1,5 @@
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  @for(trip of trips; track trip.id){
+    <app-trip [trip]=trip (buyEvent)="buy($event)" appHover></app-trip>
+  }
+</div>
